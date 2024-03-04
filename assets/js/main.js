@@ -42,3 +42,18 @@ loginBtn.addEventListener('click', () =>{
 loginClose.addEventListener('click', () =>{
    login.classList.remove('show-login')
 })
+
+/*=============== SINGUP ===============*/
+const signup = document.getElementById('signup'),
+      signupBtn = document.getElementById('signup-btn'),
+      signupClose = document.getElementById('signup-close')
+
+/* signup show */
+signupBtn.addEventListener('click', () =>{
+   signup.classList.add('show-signup')
+})
+
+/* signup hidden */
+signupClose.addEventListener('click', () =>{
+   signup.classList.remove('show-signup')
+})

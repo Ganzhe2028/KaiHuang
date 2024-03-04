@@ -21,6 +21,7 @@
 }
 
 .search,
+.signup,
 .login{
    position: fixed;
    left: 0;
@@ -38,6 +39,7 @@
 }
 
 .search__close,
+.signup__close,
 .login__close{
    position: absolute;
    top: 2rem;

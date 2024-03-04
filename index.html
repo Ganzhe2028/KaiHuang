@@ -91,7 +91,7 @@
 
             <div>
                <p class="login__signup">
-                  You do not have an account? <a href="#">Sign up</a>
+                  You do not have an account? <i id="signup-btn"><a href="#">Sign up</a></i>
                </p>
    
                <a href="#" class="login__forgot">
@@ -103,6 +103,37 @@
          </form>
 
          <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <!--==================== SIGNUP ====================-->
+      <div class="signup" id="signup">
+         <form action="" class="signup__form">
+            <h2 class="signup__title">Sign up</h2>
+            
+            <div class="signup__group">
+               <div>
+                  <label for="email" class="signup__label">Email</label>
+                  <input type="email" placeholder="Write your email" id="email" class="signup__input">
+               </div>
+               
+               <div>
+                  <label for="password" class="signup__label">Password</label>
+                  <input type="password" placeholder="Enter your password" id="password" class="signup__input">
+               </div>
+            </div>
+
+            <div>
+               <p class="signup__signup">
+                  You already have an account? <i id="login-btn"><a href="#">Log in</a></i>
+               </p>
+
+               <p><span>&nbsp;</span></p>
+   
+               <button type="submit" class="signup__button">Sign up</button>
+            </div>
+         </form>
+
+         <i class="ri-close-line login__close" id="signup-close"></i>
       </div>
 
       <!--==================== MAIN ====================-->

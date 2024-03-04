@@ -2,6 +2,7 @@
 /* For medium devices */
 @media screen and (min-width: 576px){
    .search,
+   .signup,
    .login{
       padding-top: 10rem;
    }
@@ -12,6 +13,7 @@
    }
 
    .search__close,
+   .signup__close,
    .login__close{
       width: max-content;
       top: 5rem;
@@ -21,6 +23,7 @@
       font-size: 2rem;
    }
 
+   .signup__form,
    .login__form{
       max-width: 400px;
       margin-inline: auto;
@@ -46,6 +49,7 @@
       }
    }
 
+   .signup__form,
    .login__form{
       padding: 3rem 2rem 3.5rem;
    }

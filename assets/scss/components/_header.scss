@@ -27,6 +27,7 @@
    }
    &__search,
    &__login,
+   &__signup,
    &__toggle,
    &__close{
       font-size: 1.25rem;
@@ -34,7 +35,7 @@
       cursor: pointer;
       transition: color .4s;
    }
-   :is(&__logo, &__search, &__login, &__toggle, &__link):hover{
+   :is(&__logo, &__search, &__login, &__signup, &__toggle, &__link):hover{
       color: var(--first-color);
    }
    // Navigation for mobile devices
