@@ -396,11 +396,11 @@ img {
   color: var(--text-color);
 }
 
-.signup__signup {
+.signup__login {
   margin-bottom: .5rem;
 }
 
-.signup__signup a {
+.signup__login a {
   color: var(--first-color);
 }
 

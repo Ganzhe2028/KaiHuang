@@ -43,17 +43,40 @@ loginClose.addEventListener('click', () =>{
    login.classList.remove('show-login')
 })
 
-/*=============== SINGUP ===============*/
-const signup = document.getElementById('signup'),
-      signupBtn = document.getElementById('signup-btn'),
-      signupClose = document.getElementById('signup-close')
+/*=============== SIGNUP ===============*/
+const signupClose = document.getElementById('signup-close')
+//       signupBtn = document.getElementById('signup-btn'),
 
-/* signup show */
-signupBtn.addEventListener('click', () =>{
-   signup.classList.add('show-signup')
-})
+// /* login hidden */
+// loginClose.addEventListener('click', () =>{
+//    login.classList.remove('show-login')
+// })
+
+// /* signup show */
+// signupBtn.addEventListener('click', () =>{
+//    signup.classList.add('show-signup')
+// })
 
 /* signup hidden */
 signupClose.addEventListener('click', () =>{
    signup.classList.remove('show-signup')
+})
+
+/*=============== GOTO LOGIN ===============*/
+const gotoLoginBtn = document.getElementById('goto-login-btn')
+
+/* goto login */
+gotoLoginBtn.addEventListener('click', () =>{
+   signup.classList.remove('show-signup')
+   login.classList.add('show-login')
+})
+
+
+/*=============== GOTO SIGNUP ===============*/
+const gotoSignupBtn = document.getElementById('goto-signup-btn')
+
+/* goto signup */
+gotoSignupBtn.addEventListener('click', () =>{
+   login.classList.remove('show-login')
+   signup.classList.add('show-signup')
 })
