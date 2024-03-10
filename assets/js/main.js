@@ -43,6 +43,27 @@ loginClose.addEventListener('click', () =>{
    login.classList.remove('show-login')
 })
 
+/* Login method */
+document.getElementById('login').addEventListener('submit', function(e) {
+   e.preventDefault();
+   const username = document.getElementById('email').value;
+   const password = document.getElementById('password').value;
+
+   fetch('http://localhost:3000/login', {
+       method: 'POST',
+       headers: {
+           'Content-Type': 'application/json',
+       },
+       body: JSON.stringify({ username, password }),
+   })
+   .then(response => response.text())
+   .then(data => alert(data))
+   .catch((error) => {
+       console.error('Error:', error);
+   });
+});
+
+
 /*=============== SIGNUP ===============*/
 const signupClose = document.getElementById('signup-close')
 //       signupBtn = document.getElementById('signup-btn'),
@@ -61,6 +82,26 @@ const signupClose = document.getElementById('signup-close')
 signupClose.addEventListener('click', () =>{
    signup.classList.remove('show-signup')
 })
+
+/* signup method */
+document.getElementById('signup').addEventListener('submit', function(e) {
+   e.preventDefault();
+   const username = document.getElementById('email').value;
+   const password = document.getElementById('password').value;
+
+   fetch('http://localhost:3000/register', {
+       method: 'POST',
+       headers: {
+           'Content-Type': 'application/json',
+       },
+       body: JSON.stringify({ username, password }),
+   })
+   .then(response => response.text())
+   .then(data => alert(data))
+   .catch((error) => {
+       console.error('Error:', error);
+   });
+});
 
 /*=============== GOTO LOGIN ===============*/
 const gotoLoginBtn = document.getElementById('goto-login-btn')
